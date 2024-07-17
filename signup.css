@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background: linear-gradient(to bottom, #92A332, #56642A);
+}
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+  
+.search-box input[type="search"] {
+    padding-right: 30px;
+}
+  
+.search-box .fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+.member{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+.maincontent{
+    display: flex;
+    justify-content: center;
+}
+.return{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #92A322;
+    width: 450px;
+}
+.namewelcome{
+    font-size: 50px;
+    color: white;
+}
+.paracontent{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 350px;
+}
+.btnsignin{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+    border: none;
+}
+.createacc{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.createaccount{
+    font-size: 50px;
+    font-family: "Roboto Serif", serif;
+}
+.socialmedia{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.fa-facebook{
+    font-size: 30px;
+    color: darkblue;
+}
+.fa-google-plus{
+    font-size: 30px;
+    color: red;
+}
+.fa-linkedin{
+    font-size: 30px;
+    color: darkblue;
+}
+.register{
+    font-size: 18px;
+    color: gray;
+}
+.form{
+    margin-top: 25px;
+}
+.username{
+    width: 320px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 25px;
+    border-color: gray;
+    padding-left: 15px;
+}
+.username:focus{
+    outline: none;
+}
+.entermail{
+    width: 320px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 25px;
+    border-color: gray;
+    padding-left: 15px;
+}
+.entermail:focus{
+    outline: none;
+}
+.enterpassword{
+    width: 320px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 25px;
+    border-color: gray;
+    padding-left: 15px;
+    position: relative;
+}
+.enterpassword:focus{
+    outline: none;
+}
+.btn-signin{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+    border: none;
+    background-color: #92A322;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+    *{
+        overflow: hidden;
+    }
+    body{
+        width: 400px;
+    }
+    .maincontent{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+    }
+    .return{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #92A322;
+        width: 200px;
+    }
+    .createacc{
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .namewelcome{
+        font-size: 27px;
+        color: white;
+    }
+    .paracontent{
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        width: 180px;
+    }
+    .createaccount{
+        font-size: 23px;
+        font-family: "Roboto Serif", serif;
+    }
+    .socialmedia{
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .fa-facebook{
+        font-size: 22px;
+        color: darkblue;
+    }
+    .fa-google-plus{
+        font-size: 22px;
+        color: red;
+    }
+    .fa-linkedin{
+        font-size: 22px;
+        color: darkblue;
+    }
+    .register{
+        font-size: 15px;
+        color: gray;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .form{
+        margin-top: 25px;
+    }
+    .username{
+        width: 180px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 25px;
+        border-color: gray;
+        padding-left: 15px;
+    }
+    .username:focus{
+        outline: none;
+    }
+    .entermail{
+        width: 180px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 25px;
+        border-color: gray;
+        padding-left: 15px;
+    }
+    .entermail:focus{
+        outline: none;
+    }
+    .enterpassword{
+        width: 180px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 25px;
+        border-color: gray;
+        padding-left: 15px;
+        position: relative;
+    }
+    .enterpassword:focus{
+        outline: none;
+    }
+    .btn-signin{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 25px;
+        border: none;
+        background-color: #92A322;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-eye{
+        position: absolute;
+        left: 370px;
+        top: 408px !important;
+        font-size: 15px;
+    }   
+}

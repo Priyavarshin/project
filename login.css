@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background: linear-gradient(to bottom, #92A332, #56642A);
+}
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+  
+.search-box input[type="search"] {
+    padding-right: 30px;
+}
+  
+.search-box .fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+.member{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+.maindetails{
+    display: flex;
+    justify-content: center;
+}
+.namelogin{
+    margin-left: 560px;
+    font-size: 40px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+}
+.details{
+    width: 700px;
+}
+.socialdetails{
+    color: gray;
+    font-family: "Roboto Serif", serif;
+    font-size: 15px;
+}
+.socialmedia{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.fa-facebook{
+    font-size: 30px;
+}
+.fa-google-plus{
+    font-size: 30px;
+}
+.fa-linkedin{
+    font-size: 30px;
+}
+.entermail{
+    width: 320px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    border-color: gray;
+    font-family: "Roboto Serif", serif;
+    padding-left: 10px;
+}
+.entermail:focus{
+    outline: none;
+}
+.enterpassword{
+    width: 320px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    border-color: gray;
+    position: relative;
+    font-family: "Roboto Serif", serif;
+    padding-left: 10px;
+}
+.fa-facebook{
+    color: darkblue;
+    cursor: pointer;
+}
+.fa-google-plus{
+    color: red;
+    cursor: pointer;
+}
+.fa-linkedin{
+    color: darkblue;
+    cursor: pointer;
+}
+.enterpassword:focus{
+    outline: none;
+}
+.btn-signin{
+    border-radius: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    background-color: #92a332;
+    color: white;
+    font-family: "Roboto Serif", serif;
+    cursor: pointer;
+}
+.signup{
+    height: 95vh;
+    margin-top: -150px;
+    background: linear-gradient(to bottom, #92A332, #56642A);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 300px;
+}
+.newmember{
+    color: white;
+    font-family: "Roboto Serif", serif;
+    margin-top: -15px;
+}
+.signup-para{
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+}
+.btn-signup{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: "Roboto Serif", serif;
+    cursor: pointer;
+}
+.iyappa-logo{
+    width: 150px;
+    height: 150px;
+    margin-top: -125px;
+}
+@media screen and (max-width: 400px) {
+    body{
+        width: 400px !important;
+    }
+    .maindetails{
+        display: flex;
+        justify-content: space-between;
+        width: 400px !important;
+    }
+    .details{
+        width: 150px !important;
+    }
+    .entermail{
+        width: 190px !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 15px;
+        border-color: gray;
+        font-family: "Roboto Serif", serif;
+        padding-left: 10px;
+        transform: translateX(4px);
+    }
+    .entermail:focus{
+        outline: none;
+    }
+    .enterpassword{
+        width: 190px !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 15px;
+        border-color: gray;
+        position: relative;
+        font-family: "Roboto Serif", serif;
+        transform: translateX(4px);
+    }
+    .signup{
+        height: 95vh;
+        margin-top: -90px;
+        background: linear-gradient(to bottom, #92A332, #56642A);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 200px !important;
+    }
+    .btn-signin{
+        border-radius: 25px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: none;
+        background-color: #92a332;
+        color: white;
+        font-family: "Roboto Serif", serif;
+        cursor: pointer;
+        transform: translateX(25px);
+        margin-top: -200px;
+        font-size: 13px !important;
+    }
+    .socialmedia{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 40px;
+    }
+    .socialdetails{
+        color: gray;
+        font-family: "Roboto Serif", serif;
+        font-size: 17px;
+        margin-left: 35px;
+        line-height: 25px;
+    }
+    .namelogin{
+        margin-left: 20px;
+        font-size: 25px;
+        font-family: "Roboto Serif", serif;
+        font-weight: 500;
+    }
+    .newmember{
+        color: white;
+        font-family: "Roboto Serif", serif;
+        margin-top: -40px;
+    }
+    .signup-para{
+        color: white;
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+        font-family: "Roboto Serif", serif;
+    }
+    .iyappa-logo{
+        width: 150px !important;
+        height: 150px;
+        margin-top: -20px;
+    }
+}

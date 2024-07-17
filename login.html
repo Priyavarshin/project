@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a href="" class="navbar-brand" style="color: white;">Iyappaa Food Industries</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link active" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" id="categoriesDropdown" data-bs-toggle="dropdown" style="color: white;">Categories</a>
+                <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                  <li>
+                    <a href="" class="dropdown-item">Snacks</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item" >Sweets</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item" >Groceries</a>
+                  </li> 
+                  <li>
+                    <a href="" class="dropdown-item" >Oil</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item" >Rice</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" style="color: white;">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-auto">
+              <div class="search-box">
+                <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+            <div class="log">
+              <a href="./login.html" class="member">Log in / Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav><br><br><br><br><br><br>
+    <h1 class="namelogin">Hello, Friend</h1>
+    <div class="maindetails">
+    <center><div class="details"><br><br>
+        <p class="socialdetails">Login using social details</p><br>
+       <div class="socialmedia">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+        </div><br><br>
+        <div class="form">
+            <form id="loginForm" action="">
+                <input type="email" id="email" placeholder="Email" class="entermail"><br>
+                <span id="emailError" class="error"></span><br><br>
+                <input type="password" id="password" placeholder="Password" class="enterpassword"><br>
+                <span id="passwordError" class="error"></span><br><br>
+                <button type="submit" class="btn-signin">Sign In</button><br><br>
+            </form>
+        </div>
+    </div></center>
+    <div class="signup">
+        <img src="./Iyappaa_logo.png" alt="" class="iyappa-logo">
+        <h1 class="newmember">New Here?</h1>
+        <p class="signup-para">Sign up and discover your favourite snacks items, enjoy it!!!</p>
+        <a href="./signup.html"><button class="btn-signup">Sign Up</button></a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        let isValid = true;
+
+        // Email validation
+        const email = document.getElementById('email').value;
+        const emailError = document.getElementById('emailError');
+        emailError.textContent = '';
+        if (!email) {
+            emailError.textContent = 'Please enter the required email.';
+            isValid = false;
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            emailError.textContent = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        // Password validation
+        const password = document.getElementById('password').value;
+        const passwordError = document.getElementById('passwordError');
+        passwordError.textContent = '';
+        if (!password) {
+            passwordError.textContent = 'Please enter the required password.';
+            isValid = false;
+        } else if (!/(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}/.test(password)) {
+            passwordError.textContent = 'Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.';
+            isValid = false;
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
